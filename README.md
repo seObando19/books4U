@@ -1,7 +1,7 @@
 <h1>Welcome to Books4U</h1>
 <br>
 <hr>
-<h1>This repository contains <p style="color:blue;">books4U</p> final project for Holberton School</h1>
+<h1>This repository contains books4U final project for Holberton School</h1>
 <br>
 <hr>
 <h4>Description</h4>
