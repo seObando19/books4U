@@ -55,6 +55,7 @@
   transform: translateY(-10px);
   pointer-events: none;
   position: absolute;
+  transition: 0.5s;
 }
 
 .donate-box .donate-form input:focus ~ span,
@@ -64,6 +65,5 @@
   letter-spacing: 1px;
   color: rgb(216, 178, 72);
   font-weight: 700;
-  transition: 0.5s;
   resize: none;
 }
