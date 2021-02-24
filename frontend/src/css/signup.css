@@ -59,6 +59,10 @@
   font-weight: 700;
 }
 
+.signup-box input[type='submit']:hover{
+  background: rgb(216, 178, 72);
+}
+
 .signup-aux{
   display: flex;
   justify-content: center;
