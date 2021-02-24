@@ -111,12 +111,13 @@
   resize: none;
   color: #333;
   transition: 0.5s;
+  transform: translateY(20%);
   pointer-events: none;
 }
 
 .inputBox input:focus ~ span, .inputBox textarea:focus ~ span,
 .inputBox input:valid ~ span, .inputBox textarea:valid ~ span{
-  transform: translateY(-20px);
+  transform: translateY(-15px);
   font-size: 12px;
   letter-spacing: 1px;
   color: rgb(216, 178, 72);
