@@ -131,6 +131,9 @@
   border: none;
   max-width: 150px;
   padding: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .inputBox input[type='submit']:hover{

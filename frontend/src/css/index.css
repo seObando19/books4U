@@ -5,6 +5,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 .main{
@@ -70,3 +71,14 @@ body {
 .book img {
   border-radius: 0.5rem;
 }
+
+.not-found{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
