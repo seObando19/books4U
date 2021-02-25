@@ -141,6 +141,9 @@
   background: rgb(216, 178, 72);
 }
 
+#button1 { 
+  margin-left: 120px;
+}
 
 #button1:hover{
   background: rgb(216, 178, 72);
