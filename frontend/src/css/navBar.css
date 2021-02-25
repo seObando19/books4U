@@ -1,0 +1,22 @@
+.nav_buttons{
+  padding: 1.5rem;
+  width: auto;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: rgb(228, 222, 222);
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid wheat;
+}
+.nav_button{
+  text-decoration: none;
+}
+
+.nav_button:visited{
+  color: white;
+}
+.nav_button:hover{
+  color: rgb(216, 178, 72);
+}
+
