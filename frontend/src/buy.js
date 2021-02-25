@@ -1,5 +1,6 @@
 import { books } from './books' //named export
 import Book from './Book' //default export
+import image from '../src/images/cien-años-de-soledad.jpg'
 
 const BuyPage = () => {
   return (
@@ -56,7 +57,7 @@ const BuyPage = () => {
       <button id="button-buy">Submit</button>
 
       <div className="books">
-        <p></p>
+        <img src={image} id='cienañosdesoledad'/>
       </div>
     </>
   );

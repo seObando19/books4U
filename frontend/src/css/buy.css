@@ -57,3 +57,17 @@
   color: #0f3959;
   transition: 5seg;
 }
+
+.books {
+  margin-left: 10cm;
+  margin-top: -12.80cm;
+  height: 12.50cm;
+  width: 23cm;
+  overflow: auto;
+}
+
+#cienañosdesoledad { 
+  color: white;
+  width: 6cm;
+  height: 4cm;
+}
