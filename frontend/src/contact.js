@@ -1,3 +1,6 @@
+function submit() {
+  alert('Thanks for you message');
+}
 
 const ContactPage = () => {
   return (
@@ -34,29 +37,13 @@ const ContactPage = () => {
                 <span>Type your message</span>
               </div>
               <div className='inputBox w100'>
-                <input type="submit" name="" value='Send' />
+                <input id="button1" type="submit" name="" value='Send' onClick={submit} />
               </div>
             </div>
 
           </div>
         </div>
       </section>
-      {/* <h1 className='c-title'>Contact Us</h1>
-      <section className='contact-main'>
-        <div className='l-side'>
-          <p><i className="far fa-envelope fa-lg"></i>email@email.com</p>
-          <p><i className="fas fa-phone-square-alt fa-lg"></i>555-444-333</p>
-          <p><i className="fas fa-map-marker-alt fa-lg"></i>742 Evergreen Terrace</p>
-        </div>
-        <section className='c-box'>
-          <div className="r-side">
-            <input type="text" placeholder='Full name' />
-            <input type="text" placeholder='Email' />
-            <input type="text" placeholder='Type your message' />
-          </div>
-        </section>
-      </section> */}
-
     </>
   );
 }

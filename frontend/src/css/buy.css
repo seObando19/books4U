@@ -1,0 +1,59 @@
+.line_1 {
+  border-left: 2px solid wheat;
+  height: 86vh;
+  margin-left: 350px;
+}
+
+.categories {
+  margin-left: 110px;
+  margin-top: -440px;
+  color: white;
+}
+
+.authors {
+  margin-top: -10px;
+  margin-left: 29px;
+  border: none;
+  width: 250px;
+  height: 20%;
+  border-radius: 5px;
+}
+
+#authors {
+  color: white;
+  margin-top: -10px;
+  margin-left: 60px;
+}
+
+.categories_2 {
+  margin-top: -10px;
+  margin-left: 29px;
+  border: none;
+  width: 250px;
+  height: 20%;
+  border-radius: 5px;
+}
+
+#categories_2 {
+  color: white;
+  margin-top: -80px;
+  margin-left: 60px;
+}
+
+#button-buy {
+  background: #0f3959;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  width: 180px;
+  height: 50px;
+  margin-left: 90px;
+  font-size: medium;
+  margin-top: auto;
+}
+
+#button-buy:hover {
+  background-color: wheat; 
+  color: #0f3959;
+  transition: 5seg;
+}

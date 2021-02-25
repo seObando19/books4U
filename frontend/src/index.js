@@ -9,6 +9,7 @@ import './css/donate.css';
 import './css/login.css';
 import './css/forgot.css'
 import './css/signup.css'
+import './css/buy.css'
 import App from './App';
 
 

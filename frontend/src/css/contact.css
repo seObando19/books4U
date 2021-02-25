@@ -140,3 +140,9 @@
 .inputBox input[type='submit']:hover{
   background: rgb(216, 178, 72);
 }
+
+
+#button1:hover{
+  background: rgb(216, 178, 72);
+  color: #0f3959;
+}
