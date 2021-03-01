@@ -1,6 +1,5 @@
 import { books } from './books' //named export
 import Book from './Book' //default export
-import image from '../src/images/cien-años-de-soledad.jpg'
 
 const BuyPage = () => {
   return (
@@ -57,7 +56,12 @@ const BuyPage = () => {
       <button id="button-buy">Submit</button>
 
       <div className="books">
-        <img src={image} id='cienañosdesoledad'/>
+        <section className="booklist">
+          {books.map((book) => {
+            return <Book key={book.id} {...book}></Book>
+          })}
+        </section>
+ 
       </div>
     </>
   );
