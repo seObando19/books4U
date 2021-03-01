@@ -1,3 +1,5 @@
+import React from 'react'
+
 function submit() {
   alert('Thanks for you message');
 }

@@ -1,3 +1,5 @@
+import React from 'react'
+
 const SignupPage = () => {
   return (
     <>
@@ -28,9 +30,9 @@ const SignupPage = () => {
               <div><label>Confirm password</label></div>
             </section>
           </div>
-          <div className="signup-aux">
-            <input type="submit" value='Create account' />
-          </div>
+
+          <input type="submit" value='Create account' />
+
 
         </section>
       </div>
