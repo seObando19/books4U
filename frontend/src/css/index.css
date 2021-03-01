@@ -76,11 +76,17 @@ body {
 
 .not-found{
   position: absolute;
-  top: 50%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: white;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 
+.not-found p{
+  transform: translateY(-30%);
+}

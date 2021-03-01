@@ -36,7 +36,7 @@ function App() {
           <ForgotPage></ForgotPage>
         </Route>
         <Route path='*'>
-          <div className='not-found'>Not found</div>
+          <div className='not-found'>Error 404: <p>Page not found</p></div>
         </Route>
       </Switch>
     </section>
