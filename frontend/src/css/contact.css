@@ -94,7 +94,7 @@
 }
 
 .inputBox input, .inputBox textarea{
-  width: 100% !important;
+  width: 100%;
   padding: 5px 0;
   font-size: 1rem;
   resize: none;
@@ -195,5 +195,35 @@
   }
   ul.info{
     padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 580px){
+  div.formBox{
+    flex-direction: column;
+    padding-top: 0;
+    transform: translateY(-10%);
+    width: 100%;
+  }
+  .contact-form{
+    padding-right: 10px;
+    padding-left: 90px;
+    width: 150px;
+    transform: translate(-22%,5%);
+  }
+  .contact-form h2{
+    transform: translateY(-60%);
+  }
+  .contact-info{
+    padding: 5px;
+  }
+  .inputBox  input, .inputBox textarea{
+    width: 100%;
+  }
+  .inputBox.w100{
+    width: 100%;
+  }
+  #button1{
+    margin-left: 0;
   }
 }
