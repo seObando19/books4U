@@ -19,6 +19,7 @@ const DonatePage = () => {
             <span>Book to donate</span>
           </div>
         </div>
+        <input className='donate-btn' type="submit" value='Donate' />
       </section>
     </>
   );
