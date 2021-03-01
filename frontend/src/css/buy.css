@@ -55,7 +55,7 @@
 #button-buy:hover {
   background-color: wheat; 
   color: #0f3959;
-  transition: 5seg;
+  transition: 1s;
 }
 
 .books {
@@ -64,10 +64,6 @@
   height: 12.50cm;
   width: 23cm;
   overflow: auto;
-}
-
-#cienañosdesoledad { 
-  color: white;
-  width: 6cm;
-  height: 4cm;
+  background-color: white;
+  border-radius: 5px;
 }
