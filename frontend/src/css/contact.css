@@ -168,6 +168,9 @@
   padding: 30px;
   transform: translate(-20%, 20%);
   }
+  #button1{
+    margin-left: 80px;
+  }
 }
 
 @media screen and (max-width: 860px){
