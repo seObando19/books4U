@@ -148,4 +148,5 @@
 #button1:hover{
   background: rgb(216, 178, 72);
   color: #0f3959;
+  transition: 1s;
 }
