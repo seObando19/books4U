@@ -1,5 +1,10 @@
+#!/usr/bin/python3
+"""  """
 from flask import jsonify, abort
 from app.all_blueprint import route_views
+""" from models import storage
+from models.userModels import User """
+
 
 @route_views.route('/user', method=['GET'])
 def home():

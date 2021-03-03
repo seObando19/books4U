@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-import models
 from os import getenv
 from models.base_model import BaseModel, Base
 import sqlalchemy

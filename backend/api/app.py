@@ -1,7 +1,6 @@
+#!/usr/bin/python3
 from flask import  Flask, jsonify
-from app.all_blueprint import route_views
-""" from app.donate.routes import donate
-from app.buy.routes import buy """
+from api.routes import route_views
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
