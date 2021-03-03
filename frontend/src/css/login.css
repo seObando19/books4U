@@ -1,32 +1,33 @@
 
 .login-box{
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  padding-right: 1rem;
   color: darkgoldenrod;
 }
 
 .login-text{
-  background: white;
+  background: rgb(235, 232, 232);
   padding: 5px;
   font-weight: 700;
   border-radius: 5px;
   text-decoration: none;
 }
 
-.login-text:visited{
+.login-box:hover > .login-text{
   color: darkgoldenrod;
+}
+
+.login-text:visited{
+  color: #0f3959;
   text-decoration: none;
 }
 
 .main-login{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
   background: white;
   padding-bottom: 1rem;
+  min-width: 340px;
 }
 
 .main-login h1{

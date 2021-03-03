@@ -1,3 +1,4 @@
+import React from 'react'
 import { books } from './books' //named export
 import Book from './Book' //default export
 

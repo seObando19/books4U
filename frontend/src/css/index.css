@@ -9,6 +9,8 @@ body {
 }
 
 .main{
+  position: relative;
+  margin-top: 80px;
   width: 100vw;
   height: 100vh;
   background:
@@ -23,7 +25,7 @@ body {
 
 .main .h-title {
   position: absolute;
-  top: 35%;
+  top: 20%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -79,10 +81,21 @@ body {
 
 .not-found{
   position: absolute;
-  top: 50%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+  top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
 }
+<<<<<<< HEAD
+=======
+
+.not-found p{
+  transform: translateY(-30%);
+}
+>>>>>>> 6a0cb447c1e37ee4f34e1b9c5971ff2073a019ff

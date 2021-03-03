@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './navBar';
 import HomePage from './Home';
 import BuyPage from './buy';
@@ -10,12 +10,10 @@ import ForgotPage from './forgot';
 
 
 function App() {
-  const location = useLocation()
   return (
-
     <section className='main'>
       <NavBar></NavBar>
-      <Switch location={location}>
+      <Switch >
         <Route exact path='/'>
           <HomePage></HomePage>
         </Route>
@@ -38,12 +36,10 @@ function App() {
           <ForgotPage></ForgotPage>
         </Route>
         <Route path='*'>
-          <div className='not-found'>Not found</div>
+          <div className='not-found'>Error 404: <p>Page not found</p></div>
         </Route>
       </Switch>
-
     </section>
-
   );
 }
 

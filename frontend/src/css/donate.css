@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  flex-direction: column;
   width: 100%;
-  height: 75vh;
+  height: 90vh;
   color: black;
 }
 
@@ -18,7 +18,7 @@
   align-items: center;
   width: 40%;
   min-width: 255px;
-  height: 60vh;
+  height: 65vh;
   background-color: white;
 }
 
@@ -34,7 +34,8 @@
   font-size: 16px;
   border-bottom: 1px solid black;
   font-family: 'Poppins', sans-serif;
-  width: 300px;
+  width: 250px;
+  transition: all .3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -50,6 +51,7 @@
 .donate-box .donate-form{
   display: flex;
   flex-direction: column;
+  transform: translateY(-120%);
 }
 
 .donate-box .donate-form span{
@@ -67,4 +69,25 @@
   color: rgb(216, 178, 72);
   font-weight: 700;
   resize: none;
+}
+
+.donate-btn{
+  width: 150px;
+  height: 49px;
+  margin-bottom: 1rem;
+  border: none;
+  background: #0f3959;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 12px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  transform: translateY(-130%);
+}
+
+.donate-btn:hover{
+  background: rgb(216, 178, 72);
+  color: #0f3959;
+  cursor: pointer;
 }

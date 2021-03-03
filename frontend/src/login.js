@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from "react-router-dom";
 
 
@@ -18,7 +19,7 @@ const LoginPage = () => {
           <div className="pass"><Link to='/forgot'>Forgot password?</Link> </div>
           <input type="submit" value='Login' />
           <span className='sign-up'>
-            Don't have an account? <Link to='/signup'><a href="#"> Sign up</a></Link>
+            Don't have an account? <Link to='/signup'>Sign up</Link>
           </span>
         </form>
       </div>
