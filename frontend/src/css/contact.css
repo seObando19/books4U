@@ -153,9 +153,6 @@
 #button1:hover{
   background: rgb(216, 178, 72);
   color: #0f3959;
-<<<<<<< HEAD
-  transition: 1s;
-=======
 }
 
 @media screen and (max-width: 1024px){
@@ -232,5 +229,4 @@
   #button1{
     margin-left: 0;
   }
->>>>>>> 6a0cb447c1e37ee4f34e1b9c5971ff2073a019ff
 }
