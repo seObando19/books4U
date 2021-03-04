@@ -57,7 +57,12 @@ const BuyPage = () => {
       <button id="button-buy">Submit</button>
 
       <div className="books">
-        <p></p>
+        <section className="booklist">
+          {books.map((book) => {
+            return <Book key={book.id} {...book}></Book>
+          })}
+        </section>
+ 
       </div>
     </>
   );

@@ -36,11 +36,7 @@ body {
 }
 
 .booklist {
-  width: 90vw;
-  max-width: 1170px;
-  margin: 5rem 2rem;
   display: grid;
-  gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,10 +46,16 @@ body {
 }
 
 .book {
-  background: #fff;
+  background: #FFFECE;
   border-radius: 1rem;
   padding: 1rem 2rem;
   max-width: 400px;
+  margin: 15px;
+}
+
+.book:hover {
+  opacity: 50%;
+  transition: 1s;
 }
 
 .book h1 {
@@ -71,7 +73,10 @@ body {
 }
 
 .book img {
+  margin-top: 0.5rem;
   border-radius: 0.5rem;
+  width: 3cm;
+  height: 3cm;
 }
 
 .not-found{

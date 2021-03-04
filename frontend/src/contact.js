@@ -1,7 +1,13 @@
 import React from 'react'
 
 function submit() {
-  alert('Thanks for you message');
+  // alert('Thanks for you message');
+  const name = document.getElementById('fullname').innerHTML;
+  if (name.isEmpty) {
+    alert('Por favor llena los campos mandatorios')
+  } else {
+    alert('gracias por el mensaje')
+  }
 }
 
 const ContactPage = () => {
@@ -28,7 +34,7 @@ const ContactPage = () => {
             <div className="formBox">
               <div className='inputBox w50'>
                 <input type="text" name='' required />
-                <span>Full name</span>
+                <span id='fullname'>Full name</span>
               </div>
               <div className='inputBox w50'>
                 <input type="text" name='' required />
