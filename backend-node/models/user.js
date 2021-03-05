@@ -4,17 +4,14 @@ const UsersSchema = new mongoose.Schema({
     name: {
 	type: String,
 	required: true,
-	unique: true
     },
     lastname: {
 	type: String,
 	required: true,
-	unique: true
     },
     age: {
 	type: Number,
 	required: false,
-	unique: false
     },
     email: {
 	type: String,
@@ -24,7 +21,6 @@ const UsersSchema = new mongoose.Schema({
     phone: {
 	type: String,
 	required: false,
-	unique: true
     },
     username: {
 	type: String,
@@ -34,22 +30,18 @@ const UsersSchema = new mongoose.Schema({
     password: {
 	type: String,
 	required: true,
-	unique: true
     },
     type_user: [{
 	type: mongoose.Types.ObjectId,
 	ref: 'Modo_Of_Acess',
-	required: false
     }],
     created_at: {
 	type: Date,
 	required: true,
-	unique: false
     },
     updated_at: {
 	type: Date,
 	required: true,
-	unique: false
     }
 });
 
