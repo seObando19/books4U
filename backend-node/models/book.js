@@ -30,7 +30,8 @@ const bookSchema = new mongoose.Schema({
     },
     description:{
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
     image:{
         type: String,
@@ -47,11 +48,9 @@ const bookSchema = new mongoose.Schema({
     release_year:{
         type: Number,
         required: false
-    },
-    created_at:{
-        type: Date,
-        required: false
     }
+}, {
+    timestamps: true
 });
 
 const Book = mongoose.model('Book', bookSchema);
