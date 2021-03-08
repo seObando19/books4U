@@ -8,7 +8,7 @@ const BuyPage = () => {
       <div className="buyContainer">
         <section className='leftSide'>
           <div className='search-box-buy'>
-            <input className='search-txt' type='text' name='' placeholder='Search'>
+            <input className='search-txt-buy' type='text' name='' placeholder='Search'>
             </input>
             <a className='search-btn-buy' href='#'>
               <i className="fas fa-search"></i>
