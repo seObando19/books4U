@@ -35,14 +35,8 @@ const UsersSchema = new mongoose.Schema({
 	type: mongoose.Types.ObjectId,
 	ref: 'Modo_Of_Acess',
     }],
-    created_at: {
-	type: Date,
-	required: true,
-    },
-    updated_at: {
-	type: Date,
-	required: true,
-    }
+}, {
+	timestamps: true
 });
 
 const Users = mongoose.model('User', UsersSchema);
