@@ -18,6 +18,6 @@ const publisherSchema = new mongoose.Schema({
     timestamps: true
 });
 
-const Publisher = mongoose.model('Publisher', genreSchema);
+const Publisher = mongoose.model('Publisher', publisherSchema);
 
 module.exports = Publisher;
