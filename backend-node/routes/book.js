@@ -39,9 +39,9 @@ router.post('/', async (req, res, next) => {
 router.put('/:id', async (req, res, next) => {
     const { id } = req.params;
     try {
-        console.log(id, req.body);
         await Book.findByIdAndUpdate(id, req.body);
-        res.status(200).json({message: "Book updated"});
+        const bookUpdated = await Book.findById(id);
+        res.status(200).json(bookUpdated);
     } catch (error) {
         res.status(400);
         next(error);

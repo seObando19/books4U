@@ -37,8 +37,9 @@ router.post('/', async function (req, res, next) {
 router.put('/:id', async function (req, res, next) {
     const { id } = req.params;
     try {
-        const updatedAuthor = await author.findByIdAndUpdate(id, req.body);
-        res.status(200).json(updatedAuthor);
+        await Author.findByIdAndUpdate(id, req.body);
+        const authorUpdated = await Author.findById(id);
+        res.status(200).json(authorUpdated);
     } catch (error) {
         res.status(400);
         next(error);
@@ -48,8 +49,8 @@ router.put('/:id', async function (req, res, next) {
 router.delete ('/:id', async function (req, res, next) {
     const { id } = req.params;
     try {
-        const deletedAuthor = await Author.findByIdAndDelete(id);
-        res.status(200).json(deletedAuthor);
+        await Author.findByIdAndDelete(id);
+        res.status(200).json({message: "Author Deleted"});
     } catch (error) {
         res.status(400);
         next(error);
