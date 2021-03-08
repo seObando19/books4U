@@ -7,10 +7,15 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var bookRouter = require('./routes/book');
 var authorRouter = require('./routes/author');
+var genreRouter = require('./routes/genre');
+var publisherRouter = require('./routes/publisher');
+
+var cors = require("cors");
 
 var app = express();
 
 app.use(logger('dev'));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -20,5 +25,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/book', bookRouter);
 app.use('/author', authorRouter);
+app.use('/genre', genreRouter);
+app.use('/publisher', publisherRouter);
 
 module.exports = app;

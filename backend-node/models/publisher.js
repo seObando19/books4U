@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const authorSchema = new mongoose.Schema({
+const publisherSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -18,6 +18,6 @@ const authorSchema = new mongoose.Schema({
     timestamps: true
 });
 
-const Author = mongoose.model('Author', authorSchema);
+const Publisher = mongoose.model('Publisher', publisherSchema);
 
-module.exports = Author;
+module.exports = Publisher;
