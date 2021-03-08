@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.main{
+  position: relative;
+  margin-top: 80px;
+  width: 100vw;
+  height: 100vh;
+  background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url('../images/psych.jpg') ;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main .h-title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  font-family: 'Lobster', cursive;
+  pointer-events: none;
+}
+
+.booklist {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book {
+  background: #FFFECE;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  max-width: 400px;
+  margin: 15px;
+}
+
+.book:hover {
+  opacity: 50%;
+  transition: 1s;
+}
+
+.book h1 {
+  margin-top: 0.5rem;
+}
+
+.book h4 {
+  color: #617d98;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.book p {
+  margin-top: 0.5rem;
+}
+
+.book img {
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  width: 3cm;
+  height: 3cm;
+}
+
+.not-found{
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.not-found p{
+  transform: translateY(-30%);
+}
