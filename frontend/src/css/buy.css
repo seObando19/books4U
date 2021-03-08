@@ -1,18 +1,22 @@
 .buyContainer{
-
   display: flex;
+  height: 90%;
 }
 .leftSide{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   width: 30%;
-  margin-top: 20px;
+  min-width: 200px;
   color: white;
+  border-right: 2px solid rgb(216, 178, 72);
 }
 
 .rightSide{
   width: 70%;
+  height: 90%;
+  min-width: 230px;
 }
 
 #button-buy {
@@ -25,7 +29,7 @@
   width: 180px;
   height: 50px;
   font-size: medium;
-  margin-top: 15px;
+  transition: .3s ease-in;
 }
 
 #button-buy:hover{
@@ -36,7 +40,7 @@
 .books {
   margin-left: 30px;
   margin-top: 30px;
-  height: 62%;
+  height: 90%;
   width: 90%;
   overflow: auto;
   overflow-x: hidden;
@@ -47,6 +51,7 @@
 
 .booklist {
   display: grid;
+  background-color: #a1bacc;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,12 +59,17 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media screen and (max-width: 768px) {
+  #button-buy{
+    width: 100px;
+  }
+}
 
 .book {
   background: #FFFECE;
   border-radius: 1rem;
   padding: 1rem 2rem;
-  max-width: 400px;
+  max-width: 300px;
   margin: 15px;
 }
 
@@ -91,6 +101,7 @@
 
 
 .search-box-buy{
+  display: flex;
   background: white;
   height: 20px;
   width: 70%;
@@ -98,7 +109,14 @@
   padding: 10px;
 }
 
+.search-txt-buy{
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
 .search-btn-buy{
+  color: #0f3959;
   float: right;
   margin-right: 5px;
 }
