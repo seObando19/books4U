@@ -8,9 +8,14 @@ var usersRouter = require('./routes/users');
 var bookRouter = require('./routes/book');
 var authorRouter = require('./routes/author');
 
+var cors = require("cors");
+
 var app = express();
 
+
+
 app.use(logger('dev'));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
