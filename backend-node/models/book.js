@@ -13,12 +13,12 @@ const bookSchema = new mongoose.Schema({
     genre:[{
         type: mongoose.Schema.ObjectId,
         ref: 'Genre',
-        required: false
+        required: true
     }],
     publisher:[{
         type: mongoose.Schema.ObjectId,
         ref: 'Publisher',
-        required: false
+        required: true
     }],
     isbn:{
         type: String,
