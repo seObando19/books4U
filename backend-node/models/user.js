@@ -34,6 +34,7 @@ const UsersSchema = new mongoose.Schema({
     type_user: [{
 	type: mongoose.Types.ObjectId,
 	ref: 'Modo_Of_Acess',
+	required: false
     }],
 }, {
 	timestamps: true
