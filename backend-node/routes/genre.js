@@ -27,7 +27,7 @@ router.post('/', async function (req, res, next) {
     const genre = new Genre(req.body);
     try {
         const savedGenre = await genre.save();
-        res.status(201).json(savedGenre);
+        res.status(201).json(genres);
     } catch (error) {
         res.status(400);
         next(error);
