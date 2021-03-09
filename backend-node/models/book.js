@@ -6,19 +6,19 @@ const bookSchema = new mongoose.Schema({
         required: true
     },
     author:[{
-        type: mongoose.Types.ObjectId,
+        type: mongoose.Schema.ObjectId,
         ref: 'Author',
-        required: false
+        required: true
     }],
     genre:[{
-        type: mongoose.Types.ObjectId,
-        ref: 'NAN',
-        required: false
+        type: mongoose.Schema.ObjectId,
+        ref: 'Genre',
+        required: true
     }],
     publisher:[{
-        type: mongoose.Types.ObjectId,
-        ref: 'NAN',
-        required: false
+        type: mongoose.Schema.ObjectId,
+        ref: 'Publisher',
+        required: true
     }],
     isbn:{
         type: String,
