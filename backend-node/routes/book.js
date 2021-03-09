@@ -9,7 +9,7 @@ router.get('/', async (req, res, next) => {
         res.status(200).json(books);
     } catch (error) {
         res.status(400);
-        next(err);
+        next(error);
     }
 });
 
