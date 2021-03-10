@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import { books } from './books' //named export
 import Book from './Book' //default export
 
 const BuyPage = () => {
+
+  const [authors, setAuthors] = useState([])
+  const [genres, setGenres] = useState([])
+  const loadAuthors = async () => {
+    const res = await axios.get('http://localhost:9000/author');
+    setAuthors(res.data);
+  }
+  const loadGenre = async () => {
+    const res = await axios.get('http://localhost:9000/genre');
+    setGenres(res.data);
+  }
+  useEffect(() => {
+    loadAuthors();
+    loadGenre();
+  }, [])
   return (
     <>
       <div className="buyContainer">
@@ -23,11 +39,9 @@ const BuyPage = () => {
 
             <div className="authors">
               <select className="authors">
-                <option>Emmanuel Palacio</option>
-                <option>Isaac De La Hoz</option>
-                <option>Ever Gonzales</option>
-                <option>Sebastian Obando</option>
-                <option>Hector Orozco</option>
+              {authors.map(author => {
+                  return <option>{author.name}</option>
+                })}
               </select>
             </div>
 
@@ -35,11 +49,9 @@ const BuyPage = () => {
 
             <div className="categories_2">
               <select className="categories_2">
-                <option>Emmanuel Palacio</option>
-                <option>Isaac De La Hoz</option>
-                <option>Ever Gonzales</option>
-                <option>Sebastian Obando</option>
-                <option>Hector Orozco</option>
+              {genres.map(genre => {
+                  return <option>{genre.name}</option>
+                })}
               </select>
             </div>
 
