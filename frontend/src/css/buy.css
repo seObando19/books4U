@@ -100,8 +100,10 @@
 .book img {
   margin-top: 0.5rem;
   border-radius: 0.5rem;
+  display: flex;
+  margin: auto;
   width: 3cm;
-  height: 3cm;
+  height: 4cm;
 }
 
 
