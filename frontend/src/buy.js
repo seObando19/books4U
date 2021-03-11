@@ -39,7 +39,7 @@ const BuyPage = () => {
 
             <div className="authors">
               <select className="authors">
-              {authors.map(author => {
+                {authors.map(author => {
                   return <option>{author.name}</option>
                 })}
               </select>
@@ -49,7 +49,7 @@ const BuyPage = () => {
 
             <div className="categories_2">
               <select className="categories_2">
-              {genres.map(genre => {
+                {genres.map(genre => {
                   return <option>{genre.name}</option>
                 })}
               </select>
