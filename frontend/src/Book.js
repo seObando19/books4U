@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Book = ({ img, title, author }) => {
+const Book = ({image, name}) => {
   return (
     <article className='book'>
-      <img src={img} alt='book image' />
-      <h1>{title}</h1>
-      <h4>{author}</h4>
+      <img src={image} alt='book image' />
+      <h1>{name}</h1>
     </article>
   )
 }

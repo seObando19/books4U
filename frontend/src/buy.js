@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { books } from './books' //named export
-import Book from './Book' //default export
+// import { books } from './books' named export
+import Book from './Book' // default export
 
 const BuyPage = () => {
 
   const [authors, setAuthors] = useState([])
   const [genres, setGenres] = useState([])
+  const [books, setBooks] = useState([])
   const loadAuthors = async () => {
     const res = await axios.get('http://localhost:9000/author');
     setAuthors(res.data);
@@ -15,9 +16,15 @@ const BuyPage = () => {
     const res = await axios.get('http://localhost:9000/genre');
     setGenres(res.data);
   }
+  const loadBooks = async () => {
+    const res = await axios.get('http://localhost:9000/book')
+    console.log(res.data);
+    setBooks(res.data)
+  }
   useEffect(() => {
     loadAuthors();
     loadGenre();
+    loadBooks()
   }, [])
   return (
     <>
