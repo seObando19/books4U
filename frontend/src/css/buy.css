@@ -43,8 +43,6 @@
   margin-top: 30px;
   height: 80vh;
   width: 65vw;
-  overflow: auto;
-  overflow-x: hidden;
   background-color: white;
   border-radius: 3px;
 }
@@ -53,6 +51,9 @@
 .booklist {
   display: grid;
   background-color: #a1bacc;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
