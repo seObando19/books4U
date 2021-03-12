@@ -9,6 +9,7 @@ var bookRouter = require('./routes/book');
 var authorRouter = require('./routes/author');
 var genreRouter = require('./routes/genre');
 var publisherRouter = require('./routes/publisher');
+const contactRouter = require('./routes/contact');
 
 var cors = require("cors");
 
@@ -27,5 +28,6 @@ app.use('/book', bookRouter);
 app.use('/author', authorRouter);
 app.use('/genre', genreRouter);
 app.use('/publisher', publisherRouter);
+app.use('/contact', contactRouter);
 
 module.exports = app;
