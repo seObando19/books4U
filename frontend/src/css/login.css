@@ -97,6 +97,7 @@ form .text-field{
 .main-login input[type='submit']{
   width: 100%;
   height: 49px;
+  cursor: pointer;
   margin-bottom: 1rem;
   border: none;
   background: #0f3959;
