@@ -3,6 +3,8 @@ import axios from 'axios'
 // import { books } from './books' named export
 import Book from './Book' // default export
 
+
+
 const BuyPage = () => {
 
   const [authors, setAuthors] = useState([])
@@ -26,6 +28,8 @@ const BuyPage = () => {
     loadGenre();
     loadBooks()
   }, [])
+
+
   return (
     <>
       <div className="buyContainer">
@@ -43,7 +47,7 @@ const BuyPage = () => {
 
 
             <h3>Authors</h3>
-
+            
             <div className="authors">
               <select className="authors">
                 {authors.map(author => {

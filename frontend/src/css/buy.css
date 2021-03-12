@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1130px) {
   .booklist {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -163,7 +163,12 @@
 }
 
 .authors, .categories_2{
+  height: 45px;
   width: 100%;
-  max-width: 230px;
   outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  transform: translateX(-3%)
 }

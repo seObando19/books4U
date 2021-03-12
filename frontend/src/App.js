@@ -20,14 +20,10 @@ import './css/signup.css'
 import './css/buy.css';
 
 
-class App extends Component {
-  componentDidMount() {
-    axios.get('https://603fb4edd952850017605d0b.mockapi.io/api/v1/users')
-      .then(result => {
-        console.log(result.data);
-      }).catch(console.log)
-  }
 
+
+class App extends Component {
+	
     constructor(props) {
 	super(props);
 	this.state = { apiResponse: "" };
