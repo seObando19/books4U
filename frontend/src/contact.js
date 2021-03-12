@@ -29,27 +29,28 @@ const ContactPage = () => {
               </li>
             </ul>
           </section>
+	  <form action="http://localhost:9000/contact" method="POST">
           <div className="contact-form">
             <h2>Send a message</h2>
             <div className="formBox">
               <div className='inputBox w50'>
-                <input type="text" name='' required />
+                <input type="text" name='fullname' required />
                 <span id='fullname'>Full name</span>
               </div>
               <div className='inputBox w50'>
-                <input type="text" name='' required />
+                <input type="text" name='email' required />
                 <span>Email address</span>
               </div>
               <div className='inputBox w100'>
-                <textarea name="" required></textarea>
+                <textarea name="message" required></textarea>
                 <span>Type your message</span>
               </div>
               <div className='inputBox w100'>
                 <input id="button1" type="submit" name="" value='Send' onClick={submit} />
               </div>
             </div>
-
           </div>
+  	  </form>
         </div>
       </section>
     </>
