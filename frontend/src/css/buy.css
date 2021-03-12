@@ -43,8 +43,9 @@
   margin-top: 30px;
   height: 78vh;
   width: 65vw;
-  background-color: white;
+  background-color: #a1bacc;
   border-radius: 5px;
+  padding: 0.3rem;
 }
 
 
@@ -53,7 +54,6 @@
   background-color: #a1bacc;
   height: 100%;
   overflow: auto;
-  padding-bottom: 5px;
   border-radius: 5px;
 }
 
@@ -62,9 +62,27 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media screen and (max-width: 1030px) {
+  .booklist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .booklist {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media screen and (max-width: 768px) {
   #button-buy{
     width: 100px;
+  }
+  .booklist {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -72,10 +90,11 @@
   background: #FFFECE;
   border-radius: 1rem;
   padding: 1rem 2rem;
-  width: 230px;
+  width: 200px;
   max-width: 300px;
   max-height: 300px;
   margin: 15px;
+  text-align: center;
 }
 
 .book:hover {
@@ -146,4 +165,5 @@
 .authors, .categories_2{
   width: 100%;
   max-width: 230px;
+  outline: none;
 }
