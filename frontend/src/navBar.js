@@ -14,6 +14,7 @@ function NavBar() {
         <ul className="nav_buttons">
           <li><Link to='/' className="nav_button">HOME</Link></li>
           <li><Link to='/buy' className="nav_button">BOOKS</Link></li>
+          <li><Link to='/publish' className="nav_button">PUBLISH</Link></li>
           <li><Link to='/donate' className="nav_button">DONATE</Link></li>
           <li><Link to='/contact' className="nav_button">CONTACT</Link></li>
           {/* <li><div className='login-box'>

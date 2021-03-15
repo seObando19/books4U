@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './navBar';
 import HomePage from './Home';
 import BuyPage from './buy';
+import PublishPage from './publish'
 import DonatePage from './donate';
 import ContactPage from './contact';
 import LoginPage from './login';
@@ -14,6 +15,7 @@ import './css/navBar.css';
 import './css/searchBar.css';
 import './css/contact.css';
 import './css/donate.css';
+import './css/publish.css';
 import './css/login.css';
 import './css/forgot.css'
 import './css/signup.css'
@@ -53,6 +55,9 @@ class App extends Component {
 		</Route>
 		<Route exact path='/donate'>
 		<DonatePage></DonatePage>
+		</Route>
+		<Route exact path='/publish'>
+		<PublishPage></PublishPage>
 		</Route>
 		<Route exact path='/contact'>
 		<ContactPage></ContactPage>
