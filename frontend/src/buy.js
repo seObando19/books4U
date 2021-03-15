@@ -10,6 +10,7 @@ const BuyPage = () => {
   const [authors, setAuthors] = useState([])
   const [genres, setGenres] = useState([])
   const [books, setBooks] = useState([])
+  const [publisher, setPublisher] = useState([])
   const loadAuthors = async () => {
     const res = await axios.get('http://localhost:9000/author');
     setAuthors(res.data);
@@ -17,6 +18,10 @@ const BuyPage = () => {
   const loadGenre = async () => {
     const res = await axios.get('http://localhost:9000/genre');
     setGenres(res.data);
+  }
+  const loadPublisher = async () => {
+    const res = await axios.get('http://localhost:9000/publisher');
+    setPublisher(res.data);
   }
   const loadBooks = async () => {
     const res = await axios.get('http://localhost:9000/book')
@@ -26,6 +31,7 @@ const BuyPage = () => {
   useEffect(() => {
     loadAuthors();
     loadGenre();
+    loadPublisher();
     loadBooks()
   }, [])
 
@@ -66,15 +72,13 @@ const BuyPage = () => {
               </select>
             </div>
 
-            <h3 id="categories_2">Price</h3>
+            <h3 id="categories_2">Publisher</h3>
 
             <div className="categories_2">
               <select className="categories_2">
-                <option>Emmanuel Palacio</option>
-                <option>Isaac De La Hoz</option>
-                <option>Ever Gonzalez</option>
-                <option>Sebastian Obando</option>
-                <option>Hector Orozco</option>
+              {publisher.map(publisher => {
+                  return <option>{publisher.name}</option>
+                })}
               </select>
             </div>
           </div>
