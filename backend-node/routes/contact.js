@@ -56,7 +56,7 @@ router.post('/', (req, res, next) => {
 	}
     }
     sendMail()
-	.then((result) => res.status(200).send("enviado"))
+	.then((result) => res.status(200).redirect('http://localhost:3000/contact'))
 	.catch((error) => console.log(error.message)); 
 });
 
