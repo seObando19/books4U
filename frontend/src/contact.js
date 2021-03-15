@@ -1,15 +1,5 @@
 import React from 'react'
 
-function submit() {
-  // alert('Thanks for you message');
-  const name = document.getElementById('fullname').innerHTML;
-  if (name.isEmpty) {
-    alert('Por favor llena los campos mandatorios')
-  } else {
-    alert('gracias por el mensaje')
-  }
-}
-
 const ContactPage = () => {
   return (
     <>
@@ -38,7 +28,7 @@ const ContactPage = () => {
                 <span id='fullname'>Full name</span>
               </div>
               <div className='inputBox w50'>
-                <input type="text" name='email' required />
+                <input type="email" name='email' required />
                 <span>Email address</span>
               </div>
               <div className='inputBox w100'>
@@ -46,7 +36,7 @@ const ContactPage = () => {
                 <span>Type your message</span>
               </div>
               <div className='inputBox w100'>
-                <input id="button1" type="submit" name="" value='Send' onClick={submit} />
+                <input id="button1" type="submit" name="" value='Send' />
               </div>
             </div>
           </div>
