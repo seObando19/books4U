@@ -13,7 +13,7 @@ function NavBar() {
         <input type="checkbox" className='burger-check' id="check" />
         <ul className="nav_buttons">
           <li><Link to='/' className="nav_button">HOME</Link></li>
-          <li><Link to='/buy' className="nav_button">BUY</Link></li>
+          <li><Link to='/buy' className="nav_button">BOOKS</Link></li>
           <li><Link to='/donate' className="nav_button">DONATE</Link></li>
           <li><Link to='/contact' className="nav_button">CONTACT</Link></li>
           {/* <li><div className='login-box'>
