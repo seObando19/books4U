@@ -1,19 +1,5 @@
 import React from 'react'
 
-function submit() {
-  const name = document.getElementById('full-name').value;
-  const email = document.getElementById('email').value;
-  const text_message = document.getElementById('message').value;
-
-  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
-    if (name !== '' && email !== '' && text_message !== ''){
-      alert("Thanks for your message");
-    }
-  } else {
-    return false;
-  }
-}
-
 const ContactPage = () => {
   return (
     <>
@@ -38,19 +24,19 @@ const ContactPage = () => {
             <h2>Send a message</h2>
             <div className="formBox">
               <div className='inputBox w50'>
-                <input type="text" name='fullname' id="full-name" required />
+                <input type="text" name='fullname' required />
                 <span id='fullname'>Full name</span>
               </div>
               <div className='inputBox w50'>
-                <input type="email" name='email' id="email" required />
+                <input type="email" name='email' required />
                 <span>Email address</span>
               </div>
               <div className='inputBox w100'>
-                <textarea name="message" id="message" required></textarea>
+                <textarea name="message" required></textarea>
                 <span>Type your message</span>
               </div>
               <div className='inputBox w100'>
-                <input id="button1" type="submit" name="" value='Send' onClick={submit} />
+                <input id="button1" type="submit" name="" value='Send' />
               </div>
             </div>
           </div>
