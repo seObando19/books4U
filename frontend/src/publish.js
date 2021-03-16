@@ -17,6 +17,7 @@ const PublishPage = () => {
     const res = await axios.get('http://localhost:9000/publisher');
     setPublisher(res.data);
   }
+
   useEffect(() => {
     loadAuthors();
     loadGenre();
@@ -24,32 +25,32 @@ const PublishPage = () => {
   }, [])
 
   return (
-    <>
+    <form action="http://localhost:9000/book" method="post">
       <section className='publish-main'>
         <div className="publish-box">
           <h1>Publish to new Book</h1>
           <div className="publish-input">
             <div className="publish-input-box">
               <div className="publish-form">
-                <input type="text" name='' required />
+                <input type="text" name='name' required />
                 <span>Name</span>
               </div>
               <div className="publish-form">
-                <input type="text" name='' required />
+                <input type="text" name='price' required />
                 <span>Price</span>
               </div>
               <div className="publish-form">
-                <input type="text" name='' required />
+                <input type="text" name='description' required />
                 <span>Description</span>
               </div>
               <div className="publish-form">
-                <input type="text" name='' required />
+                <input type="text" name='image' required />
                 <span>URL image</span>
               </div>
             </div>
             <div className="publish-input-box">
-            <div className="publish-form">
-                <select className="drop-box">
+            {/* <div className="publish-form">
+                <select className="drop-box" name="author">
                   {authors.map(author => {
                     return <option>{author.name}</option>
                   })}
@@ -57,7 +58,7 @@ const PublishPage = () => {
               <span id="tittle">Author</span>
             </div>
             <div className="publish-form">
-                <select className="drop-box">
+                <select className="drop-box" name="genre">
                   {genres.map(genre => {
                     return <option>{genre.name}</option>
                   })}
@@ -65,19 +66,19 @@ const PublishPage = () => {
                 <span id="tittle">Genre</span>
             </div>
             <div className="publish-form">
-                <select className="drop-box">
+                <select className="drop-box" name="publisher">
                 {publisher.map(publisher => {
                     return <option>{publisher.name}</option>
                   })}
                 </select>
               <span id="tittle">Publisher</span>
-            </div>
+            </div> */}
           </div>
           </div>
         </div>
         <input className='publish-btn' type="submit" value='publish' />
       </section>
-    </>
+    </form>
   );
 }
 

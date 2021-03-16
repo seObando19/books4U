@@ -13,6 +13,16 @@ router.get('/', async (req, res, next) => {
     }
 });
 
+router.post('/add', (req, res, next) => {
+    try {
+        console.log(req.body);
+        res.status(200)
+    } catch (error) {
+        res.status(400);
+        next(error);
+    }
+})
+
 router.get('/:id', async (req, res, next) => {
     const { id } = req.params;
     try {

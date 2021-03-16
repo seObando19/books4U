@@ -22,7 +22,7 @@ const bookSchema = new mongoose.Schema({
     }],
     isbn:{
         type: String,
-        required: true
+        required: false
     },
     price:{
         type: Number,
@@ -39,7 +39,7 @@ const bookSchema = new mongoose.Schema({
     },
     raiting:{
         type: Number,
-        required: true
+        required: false
     },
     number_pages:{
         type: Number,
