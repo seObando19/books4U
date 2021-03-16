@@ -36,40 +36,41 @@ const PublishPage = () => {
               </div>
               <div className="publish-form">
                 <input type="text" name='' required />
-                <span>ISBN</span>
+                <span>Price</span>
               </div>
               <div className="publish-form">
                 <input type="text" name='' required />
-                <span>ISBN</span>
+                <span>Description</span>
               </div>
               <div className="publish-form">
                 <input type="text" name='' required />
-                <span>ISBN</span>
+                <span>URL image</span>
               </div>
             </div>
             <div className="publish-input-box">
             <div className="publish-form">
-                <select className="">
+                <select className="drop-box">
                   {authors.map(author => {
                     return <option>{author.name}</option>
                   })}
                 </select>
-              <span>Author</span>
+              <span id="tittle">Author</span>
             </div>
             <div className="publish-form">
-                <select className="">
+                <select className="drop-box">
                   {genres.map(genre => {
                     return <option>{genre.name}</option>
                   })}
                 </select>
+                <span id="tittle">Genre</span>
             </div>
             <div className="publish-form">
-                <select className="">
+                <select className="drop-box">
                 {publisher.map(publisher => {
                     return <option>{publisher.name}</option>
                   })}
                 </select>
-              <span>Publisher</span>
+              <span id="tittle">Publisher</span>
             </div>
           </div>
           </div>
