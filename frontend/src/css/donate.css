@@ -91,3 +91,10 @@
   color: #0f3959;
   cursor: pointer;
 }
+
+.drag-file {
+  height: 1px;
+  width: 8cm;
+  margin-bottom: 2cm;
+  margin-top: -1cm;
+}
