@@ -38,7 +38,7 @@ router.post('/', async (req, res, next) => {
     const book = new Book(req.body);
     try {
         const savedBook = await book.save();
-        res.status(201).redirect('http://localhost:3000/publish');
+        res.status(201);
         /* res.json(savedBook); */
     } catch (error) {
         res.status(400);
