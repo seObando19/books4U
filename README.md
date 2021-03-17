@@ -7,7 +7,7 @@
 <h4>Description</h4>
 
 # Books4U is a MERN Stack based project.
-The Books4U projetc is for a website dedicated to the sale of digital books
+The Books4U project is for a website dedicated to the sale of digital books
 Online, with the added value of being able to donate books for people
 with limited economic resources.
 
