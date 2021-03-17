@@ -10,7 +10,6 @@
   padding: 10px;
 }
 
-
 .search-box:hover > .search-txt{
   width: 240px;
   padding: 0 6px;
@@ -46,3 +45,18 @@
   width: 0;
 }
 
+#button-home {
+  border-radius: 50%;
+  height: 45px;
+  width: 60px;
+  border: none;
+  align-items: center;
+  background-color: white;
+  outline: none;
+}
+
+#button-home:hover {
+  background: rgb(216, 178, 72);
+  transition: 1.5s;
+  cursor: pointer;
+}
