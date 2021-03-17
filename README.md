@@ -7,7 +7,7 @@
 <h4>Description</h4>
 
 # Books4U is a MERN Stack based project.
-The Books4U projetc is for a website dedicated to the sale of digital books
+The Books4U project is for a website dedicated to the sale of digital books
 Online, with the added value of being able to donate books for people
 with limited economic resources.
 
@@ -70,7 +70,7 @@ Once thats done, close the ESLint tab that is open, and press Command-Shift-P on
 
 * Move into the project directory: `cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME`
 * Run the development task: `npm run dev`
-    * Starts a server running at http://localhost:8080
+    * Starts a server running at http://localhost:3000
     * Automatically rebuilds when any of your files change
 
 ## Directory layout
