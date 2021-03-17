@@ -49,10 +49,10 @@ const PublishPage = () => {
               </div>
             </div>
             <div className="publish-input-box">
-            {/* <div className="publish-form">
+            <div className="publish-form">
                 <select className="drop-box" name="author">
                   {authors.map(author => {
-                    return <option>{author.name}</option>
+                    return <option value={author._id}>{author.name}</option>
                   })}
                 </select>
               <span id="tittle">Author</span>
@@ -60,7 +60,7 @@ const PublishPage = () => {
             <div className="publish-form">
                 <select className="drop-box" name="genre">
                   {genres.map(genre => {
-                    return <option>{genre.name}</option>
+                    return <option value={genre._id}>{genre.name}</option>
                   })}
                 </select>
                 <span id="tittle">Genre</span>
@@ -68,11 +68,11 @@ const PublishPage = () => {
             <div className="publish-form">
                 <select className="drop-box" name="publisher">
                 {publisher.map(publisher => {
-                    return <option>{publisher.name}</option>
+                    return <option value={publisher._id}>{publisher.name}</option>
                   })}
                 </select>
               <span id="tittle">Publisher</span>
-            </div> */}
+            </div>
           </div>
           </div>
         </div>
