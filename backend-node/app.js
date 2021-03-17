@@ -10,6 +10,7 @@ var authorRouter = require('./routes/author');
 var genreRouter = require('./routes/genre');
 var publisherRouter = require('./routes/publisher');
 const contactRouter = require('./routes/contact');
+const searchBarRouter = require('./routes/searchBar');
 
 var cors = require("cors");
 
@@ -29,5 +30,6 @@ app.use('/author', authorRouter);
 app.use('/genre', genreRouter);
 app.use('/publisher', publisherRouter);
 app.use('/contact', contactRouter);
+app.use('/searchBar', searchBarRouter);
 
 module.exports = app;
