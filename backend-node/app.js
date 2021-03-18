@@ -11,6 +11,7 @@ var genreRouter = require('./routes/genre');
 var publisherRouter = require('./routes/publisher');
 const contactRouter = require('./routes/contact');
 const searchBarRouter = require('./routes/searchBar');
+var donateRouter = require('./routes/donate');
 
 var cors = require("cors");
 
@@ -31,5 +32,6 @@ app.use('/genre', genreRouter);
 app.use('/publisher', publisherRouter);
 app.use('/contact', contactRouter);
 app.use('/searchBar', searchBarRouter);
+app.use('/donate', donateRouter);
 
 module.exports = app;
