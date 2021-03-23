@@ -16,6 +16,8 @@ Technologies that make up the stack. MongoDB - document database.
 Express(.js) - Node.js web framework.
 React(.js) - a client-side JavaScript framework.
 
+# Books4U landing page: https://edgg72.github.io/landingpage-books4u/
+
 
 
 ## Getting Started
@@ -120,7 +122,7 @@ Once thats done, close the ESLint tab that is open, and press Command-Shift-P on
 <h4>Authors:</h4>
 <p>Emmanuel Palacio Gaviria - 1679@holbertonschool.com</p>
 <p>Ever Daniel Gonzalez - 1895@holbertonschool.com</p>
-<p>Hector Orozco - 2066@holbertonschool.com</p>
+<p>Hector Orozco - 2066@holbertonschool.com https://www.linkedin.com/feed/update/urn:li:activity:6779531115591024640/</p>
 <p>Issac De La Hoz - 1902@holbertonschool.com</p>
 <p>Sebastian Obando Perez - 1869@holbertonschool.com</p>
 <br>
