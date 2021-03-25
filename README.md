@@ -123,7 +123,7 @@ Once thats done, close the ESLint tab that is open, and press Command-Shift-P on
 <p>Emmanuel Palacio Gaviria - 1679@holbertonschool.com</p>
 <p>Ever Daniel Gonzalez - 1895@holbertonschool.com</p>
 <p>Hector Orozco - 2066@holbertonschool.com https://www.linkedin.com/feed/update/urn:li:activity:6779531115591024640/</p>
-<p>Issac De La Hoz - 1902@holbertonschool.com</p>
-<p>Sebastian Obando Perez - 1869@holbertonschool.com</p>
+<p>Issac De La Hoz - 1902@holbertonschool.com https://isdereal99.medium.com/books4u-2df3986c177</p>
+<p>Sebastian Obando Perez - 1869@holbertonschool.com https://sebastianobandop.medium.com/books4u-project-84d5ed35aa34</p>
 <br>
 <hr>
